@@ -244,4 +244,53 @@ RESOURCE_MAPPING = {
         'docs': 'https://cloud.tenable.com/api#/resources/folders/list',
         'methods': ['GET']
     },
+
+    # Groups
+    'add_user_to_group': {
+        'resource': '/groups/{group_id}/users/{user_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/groups/add-user',
+        'methods': ['POST']
+    },
+    'create_group': {
+        'resource': '/groups',
+        'docs': 'https://cloud.tenable.com/api#/resources/groups/create',
+        'methods': ['POST']
+    },
+    'delete_group': {
+        'resource': '/groups/{group_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/groups/delete',
+        'methods': ['DELETE']
+    },
+    'delete_user_from_group': {
+        'resource': '/groups/{group_id}/users/{user_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/groups/delete-user',
+        'methods': ['DELETE']
+    },
+    'update_group': {
+        'resource': '/groups/{group_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/groups/edit',
+        'methods': ['PUT']
+    },
+    'get_groups': {
+        'resource': '/groups',
+        'docs': 'https://cloud.tenable.com/api#/resources/groups/list',
+        'methods': ['GET']
+    },
+    'get_users_from_group': {
+        'resource': '/groups/{group_id}/users',
+        'docs': 'https://cloud.tenable.com/api#/resources/groups/list-users',
+        'methods': ['GET']
+    },
+
+    # Permissions
+    'change_permissions': {
+        'resource': '/permissions/{object_type}/{object_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/permissions/change',
+        'methods': ['PUT']
+    },
+    'get_permissions': {
+        'resource': '/permissions/{object_type}/{object_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/permissions/list',
+        'methods': ['GET']
+    },
 }
