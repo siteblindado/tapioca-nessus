@@ -76,4 +76,48 @@ RESOURCE_MAPPING = {
         'docs': 'https://cloud.tenable.com/api#/resources/agent-groups/list',
         'methods': ['GET']
     },
+
+    # Agents
+    'delete_agent': {
+        'resource': '/scanners/{scanner_id}/agents/{agent_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/agents/delete',
+        'methods': ['DELETE']
+    },
+    'get_agents': {
+        'resource': '/scanners/{scanner_id}/agents',
+        'docs': 'https://cloud.tenable.com/api#/resources/agents/list',
+        'methods': ['DELETE']
+    },
+    'get_agent': {
+        'resource': '/scanners/{scanner_id}/agents/{agent_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/agents/get',
+        'methods': ['GET']
+    },
+
+    # Assets
+    'list_assets': {
+        'resource': '/assets',
+        'docs': 'https://cloud.tenable.com/api#/resources/assets/list-assets',
+        'methods': ['GET']
+    },
+    'asset_info': {
+        'resource': '/assets/{asset_uuid}',
+        'docs': 'https://cloud.tenable.com/api#/resources/assets/asset-info',
+        'methods': ['GET']
+    },
+    'import_assets': {
+        'resource': '/import/assets',
+        'docs': 'https://cloud.tenable.com/api#/resources/assets/import',
+        'methods': ['POST']
+    },
+    'list_import_jobs': {
+        'resource': '/import/asset-jobs',
+        'docs': 'https://cloud.tenable.com/api#/resources/assets/list-import-jobs',
+        'methods': ['GET']
+    },
+    'get_import_jobs_info': {
+        'resource': '/import/asset-jobs/{asset_import_job_uuid}',
+        'docs': 'https://cloud.tenable.com/api#/resources/assets/import-job-info',
+        'methods': ['GET']
+    },
 }
