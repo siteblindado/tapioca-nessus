@@ -213,6 +213,35 @@ RESOURCE_MAPPING = {
     'file_upload': {
         'resource': '/file/upload',
         'docs': 'https://cloud.tenable.com/api#/resources/file/upload',
+        'methods': ['POST']
+    },
+
+    # Agents Filters
+    'get_agents_filters': {
+        'resource': '/filters/scans/agents',
+        'docs': 'https://cloud.tenable.com/api#/resources/filters/agents-filters',
+        'methods': ['GET']
+    },
+
+    # Folders
+    'create_folder': {
+        'resource': '/folders',
+        'docs': 'https://cloud.tenable.com/api#/resources/folders/create',
+        'methods': ['POST']
+    },
+    'delete_folder': {
+        'resource': '/folders/{folder_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/folders/delete',
+        'methods': ['DELETE']
+    },
+    'update_folder': {
+        'resource': '/folders/{folder_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/folders/edit',
+        'methods': ['PUT']
+    },
+    'get_folders': {
+        'resource': '/folders',
+        'docs': 'https://cloud.tenable.com/api#/resources/folders/list',
         'methods': ['GET']
     },
 }
