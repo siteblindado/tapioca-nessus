@@ -120,4 +120,38 @@ RESOURCE_MAPPING = {
         'docs': 'https://cloud.tenable.com/api#/resources/assets/import-job-info',
         'methods': ['GET']
     },
+
+    # Audit log
+    'audit_log_events': {
+        'resource': '/audit-log/v1/events',
+        'docs': 'https://cloud.tenable.com/api#/resources/audit-log/events',
+        'methods': ['GET']
+    },
+
+    # Bulk operations
+    'bulk_add_agent': {
+        'resource': '/scanners/{scanner_id}/agent-groups/{group_id}/agents/_bulk/add',
+        'docs': 'https://cloud.tenable.com/api#/resources/bulk-operations/bulk-add-agent',
+        'methods': ['POST']
+    },
+    'bulk_remove_agent': {
+        'resource': '/scanners/{scanner_id}/agent-groups/{group_id}/agents/_bulk/remove',
+        'docs': 'https://cloud.tenable.com/api#/resources/bulk-operations/bulk-remove-agent',
+        'methods': ['POST']
+    },
+    'unlink_agent': {
+        'resource': '/scanners/{scanner_id}/agents/_bulk/unlink',
+        'docs': 'https://cloud.tenable.com/api#/resources/bulk-operations/bulk-unlink-agent',
+        'methods': ['POST']
+    },
+    'bulk_agent_group_status': {
+        'resource': '/scanners/{scanner_id}/agent-groups/{group_id}/agents/_bulk/{task_uuid}',
+        'docs': 'https://cloud.tenable.com/api#/resources/bulk-operations/bulk-agent-group-status',
+        'methods': ['GET']
+    },
+    'bulk_agent_status': {
+        'resource': '/scanners/{scanner_id}/agents/_bulk/{task_uuid}',
+        'docs': 'https://cloud.tenable.com/api#/resources/bulk-operations/bulk-agent-status',
+        'methods': ['GET']
+    },
 }
