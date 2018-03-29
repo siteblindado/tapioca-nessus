@@ -2,7 +2,7 @@
 
 RESOURCE_MAPPING = {
     # Agent confg
-    'get_agent_config': {
+    'get_agent_config_details': {
         'resource': '/scanners/{scanner_id}/agents/config',
         'docs': 'https://cloud.tenable.com/api#/resources/agent-config/details',
         'methods': ['GET']
@@ -14,27 +14,27 @@ RESOURCE_MAPPING = {
     },
 
     # Agent Exclusions
-    'create_exclusion': {
+    'create_agent_exclusion': {
         'resource': '/scanners/{scanner_id}/agents/exclusions',
         'docs': 'https://cloud.tenable.com/api#/resources/agent-exclusions/create',
         'methods': ['POST']
     },
-    'update_exclusion': {
+    'update_agent_exclusion': {
         'resource': '/scanners/{scanner_id}/agents/exclusions/{exclusion_id}',
         'docs': 'https://cloud.tenable.com/api#/resources/agent-exclusions/edit',
         'methods': ['PUT']
     },
-    'delete_exclusion': {
+    'delete_agent_exclusion': {
         'resource': '/scanners/{scanner_id}/agents/exclusions/{exclusion_id}',
         'docs': 'https://cloud.tenable.com/api#/resources/agent-exclusions/delete',
         'methods': ['DELETE']
     },
-    'get_exclusion_details': {
+    'get_agent_exclusion_details': {
         'resource': '/scanners/{scanner_id}/agents/exclusions/{exclusion_id}',
         'docs': 'https://cloud.tenable.com/api#/resources/agent-exclusions/details',
         'methods': ['GET']
     },
-    'get_exclusions': {
+    'get_agent_exclusions': {
         'resource': '/scanners/{scanner_id}/agents/exclusions',
         'docs': 'https://cloud.tenable.com/api#/resources/agent-exclusions/list',
         'methods': ['GET']
@@ -179,6 +179,40 @@ RESOURCE_MAPPING = {
     'get_plugin_description': {
         'resource': '/editor/policy/{policy_id}/families/{family_id}/plugins/{plugin_id}',
         'docs': 'https://cloud.tenable.com/api#/resources/editor/plugin-description',
+        'methods': ['GET']
+    },
+
+    # Exclusions
+    'create_exclusion': {
+        'resource': '/exclusions',
+        'docs': 'https://cloud.tenable.com/api#/resources/exclusions/create',
+        'methods': ['POST']
+    },
+    'delete_exclusion': {
+        'resource': '/exclusions/{list_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/exclusions/delete',
+        'methods': ['DELETE']
+    },
+    'get_exclusion_details': {
+        'resource': '/exclusions/{list_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/exclusions/details',
+        'methods': ['GET']
+    },
+    'update_exclusion': {
+        'resource': '/exclusions/{list_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/exclusions/edit',
+        'methods': ['PUT']
+    },
+    'get_exclusions': {
+        'resource': '/exclusions',
+        'docs': 'https://cloud.tenable.com/api#/resources/exclusions/list',
+        'methods': ['GET']
+    },
+
+    # File
+    'file_upload': {
+        'resource': '/file/upload',
+        'docs': 'https://cloud.tenable.com/api#/resources/file/upload',
         'methods': ['GET']
     },
 }
