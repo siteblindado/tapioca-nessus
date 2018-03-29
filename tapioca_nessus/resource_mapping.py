@@ -154,4 +154,31 @@ RESOURCE_MAPPING = {
         'docs': 'https://cloud.tenable.com/api#/resources/bulk-operations/bulk-agent-status',
         'methods': ['GET']
     },
+
+    # Editor
+    'export_audit_file': {
+        'resource': '/editor/{type}/{object_id}/audits/{file_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/editor/audits',
+        'methods': ['GET']
+    },
+    'get_template_details': {
+        'resource': '/editor/{type}/templates/{template_uuid}',
+        'docs': 'https://cloud.tenable.com/api#/resources/editor/details',
+        'methods': ['GET']
+    },
+    'get_editor_object': {
+        'resource': '/editor/{type}/{id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/editor/edit',
+        'methods': ['GET']
+    },
+    'get_templates': {
+        'resource': '/editor/{type}/templates',
+        'docs': 'https://cloud.tenable.com/api#/resources/editor/list',
+        'methods': ['GET']
+    },
+    'get_plugin_description': {
+        'resource': '/editor/policy/{policy_id}/families/{family_id}/plugins/{plugin_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/editor/plugin-description',
+        'methods': ['GET']
+    },
 }
