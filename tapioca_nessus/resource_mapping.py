@@ -394,4 +394,51 @@ RESOURCE_MAPPING = {
         'docs': 'https://cloud.tenable.com/api#/resources/scanner-groups',
         'methods': ['GET']
     },
+
+    # Scanners
+    'control_scans': {
+        'resource': '/scanners/{scanner_id}/scans/{scan_uuid}/control',
+        'docs': 'https://cloud.tenable.com/api#/resources/scanners/control-scans',
+        'methods': ['POST']
+    },
+    'delete_scan': {
+        'resource': '/scanners/{scanner_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/scanners/delete',
+        'methods': ['DELETE']
+    },
+    'get_scan_details': {
+        'resource': '/scanners/{scanner_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/scanners/details',
+        'methods': ['GET']
+    },
+    'edit_scan': {
+        'resource': '/settings/{scanner_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/scanners/edit',
+        'methods': ['PUT']
+    },
+    'get_aws_targets': {
+        'resource': '/scanners/{scanner_id}/aws-targets',
+        'docs': 'https://cloud.tenable.com/api#/resources/scanners/get-aws-targets',
+        'methods': ['GET']
+    },
+    'get_scanner_key': {
+        'resource': '/scanners/{scanner_id}/key',
+        'docs': 'https://cloud.tenable.com/api#/resources/scanners/get-scanner-key',
+        'methods': ['GET']
+    },
+    'get_scans': {
+        'resource': '/scanners/{scanner_id}/scans',
+        'docs': 'https://cloud.tenable.com/api#/resources/scanners/get-scans',
+        'methods': ['GET']
+    },
+    'get_scanners': {
+        'resource': '/scanners',
+        'docs': 'https://cloud.tenable.com/api#/resources/scanners/list',
+        'methods': ['GET']
+    },
+    'toggle_link_state': {
+        'resource': '/settings/{scanner_id}/link',
+        'docs': 'https://cloud.tenable.com/api#/resources/scanners/toggle-link-state',
+        'methods': ['PUT']
+    },
 }
