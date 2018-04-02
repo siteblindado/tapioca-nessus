@@ -613,4 +613,30 @@ RESOURCE_MAPPING = {
         'methods': ['POST']
     },
 
+    # Target Groups
+    'create_target_group': {
+        'resource': '/target-groups',
+        'docs': 'https://cloud.tenable.com/api#/resources/target-groups/create',
+        'methods': ['POST']
+    },
+    'delete_target_group': {
+        'resource': '/target-groups/{group_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/target-groups/delete',
+        'methods': ['DELETE']
+    },
+    'get_target_group_details': {
+        'resource': '/target-groups/{group_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/target-groups/details',
+        'methods': ['GET']
+    },
+    'update_target_group': {
+        'resource': '/target-groups/{group_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/target-groups/edit',
+        'methods': ['PUT']
+    },
+    'get_target_groups': {
+        'resource': '/target-groups',
+        'docs': 'https://cloud.tenable.com/api#/resources/target-groups/list',
+        'methods': ['GET']
+    },
 }
