@@ -548,4 +548,16 @@ RESOURCE_MAPPING = {
         'docs': 'https://cloud.tenable.com/api#/resources/scans/timezones',
         'methods': ['GET']
     },
+
+    # Server
+    'get_server_properties': {
+        'resource': '/server/properties',
+        'docs': 'https://cloud.tenable.com/api#/resources/server/properties',
+        'methods': ['GET']
+    },
+    'get_server_status': {
+        'resource': '/server/status',
+        'docs': 'https://cloud.tenable.com/api#/resources/server/status',
+        'methods': ['GET']
+    },
 }
