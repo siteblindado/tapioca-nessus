@@ -441,4 +441,111 @@ RESOURCE_MAPPING = {
         'docs': 'https://cloud.tenable.com/api#/resources/scanners/toggle-link-state',
         'methods': ['PUT']
     },
+
+    # Scans
+    'get_scan_attachment': {
+        'resource': '/scans/{scan_id}/attachments/{attachment_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/attachments',
+        'methods': ['GET']
+    },
+    'configure_scan': {
+        'resource': '/scans/{scan_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/configure',
+        'methods': ['PUT']
+    },
+    'copy_scan': {
+        'resource': '/scans/{scan_id}/copy',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/copy',
+        'methods': ['POST']
+    },
+    'create_scan': {
+        'resource': '/scans',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/create',
+        'methods': ['POST']
+    },
+    'delete_scan': {
+        'resource': '/scans/{scan_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/delete',
+        'methods': ['DELETE']
+    },
+    'delete_history_scan': {
+        'resource': '/scans/{scan_id}/history/{history_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/delete-history',
+        'methods': ['DELETE']
+    },
+    'get_scan_details': {
+        'resource': '/scans/{scan_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/details',
+        'methods': ['GET']
+    },
+    'export_downloand_scan': {
+        'resource': '/scans/{scan_id}/export/{file_id}/download',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/export-download',
+        'methods': ['GET']
+    },
+    'export_scan': {
+        'resource': '/scans/{scan_id}/export',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/export-request',
+        'methods': ['POST']
+    },
+    'export_status_scan': {
+        'resource': '/scans/{scan_id}/export/{file_id}/status',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/export-status',
+        'methods': ['GET']
+    },
+    'get_host_details': {
+        'resource': '/scans/{scan_id}/hosts/{host_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/host-details',
+        'methods': ['PUT']
+    },
+    'import_scan': {
+        'resource': '/scans/import',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/import',
+        'methods': ['POST']
+    },
+    'launch_scan': {
+        'resource': '/scans/{scan_id}/launch',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/launch',
+        'methods': ['POST']
+    },
+    'get_scans': {
+        'resource': '/scans',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/list',
+        'methods': ['GET']
+    },
+    'pause_scan': {
+        'resource': '/scans/{scan_id}/pause',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/pause',
+        'methods': ['POST']
+    },
+    'get_plugin_output': {
+        'resource': '/scans/{scan_id}/hosts/{host_id}/plugins/{plugin_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/plugin-output',
+        'methods': ['GET']
+    },
+    'get_scan_status': {
+        'resource': '/scans/{scan_id}/status',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/ready-status',
+        'methods': ['GET']
+    },
+    'get_scan_resume': {
+        'resource': '/scans/{scan_id}/resume',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/resume',
+        'methods': ['GET']
+    },
+    'schedule_scan': {
+        'resource': '/scans/{scan_id}/schedule',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/schedule',
+        'methods': ['PUT']
+    },
+    'stop_scan': {
+        'resource': '/scans/{scan_id}/stop',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/stop',
+        'methods': ['POST']
+    },
+    'get_scans_timezones': {
+        'resource': '/scans/timezones',
+        'docs': 'https://cloud.tenable.com/api#/resources/scans/timezones',
+        'methods': ['GET']
+    },
 }
