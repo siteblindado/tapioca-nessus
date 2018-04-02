@@ -582,27 +582,27 @@ RESOURCE_MAPPING = {
         'docs': 'https://cloud.tenable.com/api#/resources/session/get',
         'methods': ['GET']
     },
-    'change_password': {
+    'change_session_password': {
         'resource': '/session/chpasswd',
         'docs': 'https://cloud.tenable.com/api#/resources/session/password',
         'methods': ['PUT']
     },
-    'generate_keys': {
+    'generate_session_keys': {
         'resource': '/session/keys',
         'docs': 'https://cloud.tenable.com/api#/resources/session/keys',
         'methods': ['PUT']
     },
-    'two_factor': {
+    'two_factor_session': {
         'resource': '/session/two-factor',
         'docs': 'https://cloud.tenable.com/api#/resources/session/two-factor',
         'methods': ['PUT']
     },
-    'two_factor_enable': {
+    'two_factor_enable_session': {
         'resource': '/session/two-factor/send-verification',
         'docs': 'https://cloud.tenable.com/api#/resources/session/two-factor-enable',
         'methods': ['POST']
     },
-    'two_factor_enable_verify': {
+    'two_factor_enable_verify_session': {
         'resource': '/session/two-factor/verify-code',
         'docs': 'https://cloud.tenable.com/api#/resources/session/two-factor-enable-verify',
         'methods': ['POST']
@@ -638,5 +638,67 @@ RESOURCE_MAPPING = {
         'resource': '/target-groups',
         'docs': 'https://cloud.tenable.com/api#/resources/target-groups/list',
         'methods': ['GET']
+    },
+
+    # Users
+    'create_user': {
+        'resource': '/users',
+        'docs': 'https://cloud.tenable.com/api#/resources/users/create',
+        'methods': ['POST']
+    },
+    'delete_user': {
+        'resource': '/users/{group_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/users/delete',
+        'methods': ['DELETE']
+    },
+    'get_user_details': {
+        'resource': '/users/{group_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/users/details',
+        'methods': ['GET']
+    },
+    'update_user': {
+        'resource': '/users/{group_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/users/edit',
+        'methods': ['PUT']
+    },
+    'enabled_user': {
+        'resource': '/users/{group_id}/enabled',
+        'docs': 'https://cloud.tenable.com/api#/resources/users/enabled',
+        'methods': ['PUT']
+    },
+    'two_factor_user': {
+        'resource': '/users/{user_id}/two-factor',
+        'docs': 'https://cloud.tenable.com/api#/resources/users/two-factor',
+        'methods': ['PUT']
+    },
+    'two_factor_enable_user': {
+        'resource': '/users/{user_id}/two-factor/send-verification',
+        'docs': 'https://cloud.tenable.com/api#/resources/users/two-factor-enable',
+        'methods': ['POST']
+    },
+    'two_factor_enable_verify_user': {
+        'resource': '/users/{user_id}/two-factor/verify-code',
+        'docs': 'https://cloud.tenable.com/api#/resources/users/two-factor-enable-verify',
+        'methods': ['POST']
+    },
+    'impersonate_user': {
+        'resource': '/users/{user_id}/impersonate',
+        'docs': 'https://cloud.tenable.com/api#/resources/users/impersonate',
+        'methods': ['POST']
+    },
+    'get_users': {
+        'resource': '/users',
+        'docs': 'https://cloud.tenable.com/api#/resources/users/list',
+        'methods': ['GET']
+    },
+    'change_user_password': {
+        'resource': '/users/{user_id}/chpasswd',
+        'docs': 'https://cloud.tenable.com/api#/resources/users/password',
+        'methods': ['PUT']
+    },
+    'generate_user_keys': {
+        'resource': '/users/{user_id}/keys',
+        'docs': 'https://cloud.tenable.com/api#/resources/users/keys',
+        'methods': ['PUT']
     },
 }
