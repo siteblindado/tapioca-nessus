@@ -560,4 +560,57 @@ RESOURCE_MAPPING = {
         'docs': 'https://cloud.tenable.com/api#/resources/server/status',
         'methods': ['GET']
     },
+
+    # Session
+    'create_session': {
+        'resource': '/session',
+        'docs': 'https://cloud.tenable.com/api#/resources/session/create',
+        'methods': ['POST']
+    },
+    'destroy_session': {
+        'resource': '/session',
+        'docs': 'https://cloud.tenable.com/api#/resources/session/destroy',
+        'methods': ['DELETE']
+    },
+    'update_session': {
+        'resource': '/session',
+        'docs': 'https://cloud.tenable.com/api#/resources/session/edit',
+        'methods': ['PUT']
+    },
+    'get_session': {
+        'resource': '/session',
+        'docs': 'https://cloud.tenable.com/api#/resources/session/get',
+        'methods': ['GET']
+    },
+    'change_password': {
+        'resource': '/session/chpasswd',
+        'docs': 'https://cloud.tenable.com/api#/resources/session/password',
+        'methods': ['PUT']
+    },
+    'generate_keys': {
+        'resource': '/session/keys',
+        'docs': 'https://cloud.tenable.com/api#/resources/session/keys',
+        'methods': ['PUT']
+    },
+    'two_factor': {
+        'resource': '/session/two-factor',
+        'docs': 'https://cloud.tenable.com/api#/resources/session/two-factor',
+        'methods': ['PUT']
+    },
+    'two_factor_enable': {
+        'resource': '/session/two-factor/send-verification',
+        'docs': 'https://cloud.tenable.com/api#/resources/session/two-factor-enable',
+        'methods': ['POST']
+    },
+    'two_factor_enable_verify': {
+        'resource': '/session/two-factor/verify-code',
+        'docs': 'https://cloud.tenable.com/api#/resources/session/two-factor-enable-verify',
+        'methods': ['POST']
+    },
+    'restore_session': {
+        'resource': '/session/restore',
+        'docs': 'https://cloud.tenable.com/api#/resources/session/restore',
+        'methods': ['POST']
+    },
+
 }
