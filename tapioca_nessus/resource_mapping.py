@@ -293,4 +293,63 @@ RESOURCE_MAPPING = {
         'docs': 'https://cloud.tenable.com/api#/resources/permissions/list',
         'methods': ['GET']
     },
+
+    # Plugins
+    'get_families': {
+        'resource': '/plugins/families',
+        'docs': 'https://cloud.tenable.com/api#/resources/plugins/families',
+        'methods': ['GET']
+    },
+    'get_family_details': {
+        'resource': '/plugins/families/{id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/plugins/family-details',
+        'methods': ['GET']
+    },
+    'get_plugin_details': {
+        'resource': '/plugins/plugin/{id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/plugins/plugin-details',
+        'methods': ['GET']
+    },
+
+    # Policies
+    'configure_policies': {
+        'resource': '/policies/{policy_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/policies/configure',
+        'methods': ['PUT']
+    },
+    'copy_policies': {
+        'resource': '/policies/{policy_id}/copy',
+        'docs': 'https://cloud.tenable.com/api#/resources/policies/copy',
+        'methods': ['POST']
+    },
+    'create_policies': {
+        'resource': '/policies',
+        'docs': 'https://cloud.tenable.com/api#/resources/policies/create',
+        'methods': ['POST']
+    },
+    'delete_policies': {
+        'resource': '/policies/{policy_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/policies/delete',
+        'methods': ['DELETE']
+    },
+    'get_policy': {
+        'resource': '/policies/{policy_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/policies/details',
+        'methods': ['GET']
+    },
+    'import_policies': {
+        'resource': '/policies/import',
+        'docs': 'https://cloud.tenable.com/api#/resources/policies/import',
+        'methods': ['POST']
+    },
+    'export_policies': {
+        'resource': '/policies/{policy_id}/export',
+        'docs': 'https://cloud.tenable.com/api#/resources/policies/export',
+        'methods': ['GET']
+    },
+    'get_policies': {
+        'resource': '/policies',
+        'docs': 'https://cloud.tenable.com/api#/resources/policies/list',
+        'methods': ['GET']
+    },
 }
