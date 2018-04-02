@@ -352,4 +352,46 @@ RESOURCE_MAPPING = {
         'docs': 'https://cloud.tenable.com/api#/resources/policies/list',
         'methods': ['GET']
     },
+
+    # Scanner Group
+    'add_scanner_to_group': {
+        'resource': '/scanner-groups/{group_id}/scanners/{scanner_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/scanner-groups/add-scanner',
+        'methods': ['POST']
+    },
+    'create_scanner_group': {
+        'resource': '/scanner-groups',
+        'docs': 'https://cloud.tenable.com/api#/resources/scanner-groups/create',
+        'methods': ['POST']
+    },
+    'delete_scanner_group': {
+        'resource': '/scanner-groups/{group_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/scanner-groups/delete',
+        'methods': ['DELETE']
+    },
+    'delete_scanner_from_group': {
+        'resource': '/scanner-groups/{group_id}/scanners/{scanner_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/scanner-groups/delete-scanner',
+        'methods': ['DELETE']
+    },
+    'get_scanner_group_details': {
+        'resource': '/scanner-groups/{group_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/scanner-groups/details',
+        'methods': ['GET']
+    },
+    'edit_scanner_group': {
+        'resource': '/scanner-groups/{group_id}',
+        'docs': 'https://cloud.tenable.com/api#/resources/scanner-groups/edit',
+        'methods': ['PUT']
+    },
+    'get_scanner_groups': {
+        'resource': '/scanner-groups',
+        'docs': 'https://cloud.tenable.com/api#/resources/scanner-groups/list',
+        'methods': ['GET']
+    },
+    'get_scanners_from_group': {
+        'resource': '/scanner-groups/{group_id}/scanners',
+        'docs': 'https://cloud.tenable.com/api#/resources/scanner-groups',
+        'methods': ['GET']
+    },
 }
