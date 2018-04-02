@@ -701,4 +701,71 @@ RESOURCE_MAPPING = {
         'docs': 'https://cloud.tenable.com/api#/resources/users/keys',
         'methods': ['PUT']
     },
+
+    # Workbench
+    'workbenches_vulnerabilities': {
+        'resource': '/workbenches/vulnerabilities',
+        'docs': 'http://cloud.tenable.com/api#/resources/workbenches/vulnerabilities',
+        'methods': ['GET']
+    },
+    'workbenches_vulnerabilities_filters': {
+        'resource': '/filters/workbenches/vulnerabilities',
+        'docs': 'http://cloud.tenable.com/api#/resources/workbenches/vulnerabilities-filters',
+        'methods': ['GET']
+    },
+    'workbenches_vulnerability_info': {
+        'resource': '/workbenches/vulnerabilities/{plugin_id}/info',
+        'docs': 'http://cloud.tenable.com/api#/resources/workbenches/vulnerability-info',
+        'methods': ['GET']
+    },
+    'workbenches_vulnerability_output': {
+        'resource': '/workbenches/vulnerabilities/{plugin_id}/outputs',
+        'docs': 'http://cloud.tenable.com/api#/resources/workbenches/vulnerability-output',
+        'methods': ['GET']
+    },
+    'workbenches_assets': {
+        'resource': '/workbenches/assets',
+        'docs': 'http://cloud.tenable.com/api#/resources/workbenches/assets',
+        'methods': ['GET']
+    },
+    'workbenches_assets_vulnerabilities': {
+        'resource': '/workbenches/assets/vulnerabilities',
+        'docs': 'http://cloud.tenable.com/api#/resources/workbenches/assets-vulnerabilities',
+        'methods': ['GET']
+    },
+    'workbenches_asset_info': {
+        'resource': '/workbenches/assets/{asset_id}/info',
+        'docs': 'http://cloud.tenable.com/api#/resources/workbenches/asset-info',
+        'methods': ['GET']
+    },
+    'workbenches_asset_vulnerabilities': {
+        'resource': '/workbenches/assets/{asset_id}/vulnerabilities',
+        'docs': 'http://cloud.tenable.com/api#/resources/workbenches/asset-vulnerabilities',
+        'methods': ['GET']
+    },
+    'workbenches_asset_vulnerability_info': {
+        'resource': '/workbenches/assets/{asset_id}/vulnerabilities/{plugin_id}/info',
+        'docs': 'http://cloud.tenable.com/api#/resources/workbenches/asset-vulnerability-info',
+        'methods': ['GET']
+    },
+    'workbenches_asset_vulnerability_output': {
+        'resource': '/workbenches/assets/{asset_id}/vulnerabilities/{plugin_id}/outputs',
+        'docs': 'http://cloud.tenable.com/api#/resources/workbenches/asset-vulnerability-output',
+        'methods': ['GET']
+    },
+    'workbenches_export_download': {
+        'resource': '/workbenches/export/{file_id}/download',
+        'docs': 'http://cloud.tenable.com/api#/resources/workbenches/export-download',
+        'methods': ['GET']
+    },
+    'workbenches_export_request': {
+        'resource': '/workbenches/export',
+        'docs': 'http://cloud.tenable.com/api#/resources/workbenches/export-request',
+        'methods': ['GET']
+    },
+    'workbenches_export_status': {
+        'resource': '/workbenches/export/{file_id}/status',
+        'docs': 'http://cloud.tenable.com/api#/resources/workbenches/export-status',
+        'methods': ['GET']
+    },
 }
