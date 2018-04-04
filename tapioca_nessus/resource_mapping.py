@@ -401,12 +401,12 @@ RESOURCE_MAPPING = {
         'docs': 'https://cloud.tenable.com/api#/resources/scanners/control-scans',
         'methods': ['POST']
     },
-    'delete_scan': {
+    'delete_scanner': {
         'resource': '/scanners/{scanner_id}',
         'docs': 'https://cloud.tenable.com/api#/resources/scanners/delete',
         'methods': ['DELETE']
     },
-    'get_scan_details': {
+    'get_scanner_details': {
         'resource': '/scanners/{scanner_id}',
         'docs': 'https://cloud.tenable.com/api#/resources/scanners/details',
         'methods': ['GET']
@@ -426,7 +426,7 @@ RESOURCE_MAPPING = {
         'docs': 'https://cloud.tenable.com/api#/resources/scanners/get-scanner-key',
         'methods': ['GET']
     },
-    'get_scans': {
+    'get_scanner_scans': {
         'resource': '/scanners/{scanner_id}/scans',
         'docs': 'https://cloud.tenable.com/api#/resources/scanners/get-scans',
         'methods': ['GET']
