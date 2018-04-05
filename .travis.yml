@@ -1,0 +1,14 @@
+language: python
+python:
+- '3.6'
+install:
+- pip install .
+script: pytest
+deploy:
+  provider: pypi
+  user: siteblindado
+  password:
+    secure: CXd34u2v3lkKH/ASbmTHh9tAR8eFKXRLDf7gOkvEhZYDiULBrN+63UQosfLzEa6dtQQo3aEOxFqOUoZ0b5pgVuUYIVAFBUtyl/HIp63l6CkM45CsgjYwol2gbTcucE8lYnsEqxEbcDpPmGnl3EZyMTcNWTkqrtBRy7KW2Qk5Qu1wb7yaqX1lnvQVU20FwbKgwrUm3fFqORdjiY/jB0PY/bnnsp/z3Ns3MztOmDEAFe3ZxTvV9/oPu3v76xlPpZyzk4RrNDXhaQjC7xokUF+uuW17dxD7izSsSvsOhfFK55Le30YHbI2APoltlpUq9RopYGX9pEiLu/PxO8igcJ9ozwEHANYALVjOpXH06qBaxipUPcca43OPyVmEHS7OmFJEmuR9Sr8NjR8cTV/C0YneHb7ByDNEjYkWb2G2zs7DuD40pBhCdeUR2/SQaXxkBAj1zq7tP5eUiANhbw4b0n/vfm8g9RWs3iC5sXaOwg/IgBjfOeqs8IjEGxER8gwClSlNIGzgoIuIsZ6TFw3GLrNMeXTqZS6Pn+2eia7Xy2tn8O/LObc6ynsB6AfriuLKXCfqMhbymJ8l1q/PPhq4Lyhe+PYtk8BWQyBfIIp50t/4ODOBP01QU4HOwvIIK2KoPlQ1vDYVyWceCMWzvVUK4El0Sos9LE6AYKp+qxX8ZBx+JGQ=
+  on:
+    tags: true
+  distributions: sdist bdist_wheel
