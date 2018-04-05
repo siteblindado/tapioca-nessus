@@ -1,4 +1,6 @@
-# Tapioca nessus
+# Tapioca Nessus
+
+[![Build Status](https://travis-ci.org/siteblindado/tapioca-nessus.svg?branch=master)](https://travis-ci.org/siteblindado/tapioca-nessus)
 
 ## Installation
 ```
