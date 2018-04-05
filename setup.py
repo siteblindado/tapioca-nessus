@@ -19,13 +19,7 @@ except (IOError, ImportError):
 
 
 package = 'tapioca_nessus'
-requirements = [
-    'tapioca-wrapper<2',
-
-]
-test_requirements = [
-
-]
+requirements = ['tapioca-wrapper<2', ]
 
 
 def get_version(package):
@@ -98,5 +92,6 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     test_suite='tests',
-    tests_require=test_requirements
+    setup_requires=['pytest-runner', ],
+    tests_require=['pytest', ]
 )
