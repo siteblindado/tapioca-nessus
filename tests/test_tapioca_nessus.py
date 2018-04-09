@@ -34,5 +34,22 @@ class TestScanners(unittest.TestCase):
                 json.loads(file_contents)
             )
 
+    def test_get_scanner_key(self):
+        access_key = sha256().hexdigest()
+        secret_key = sha256().hexdigest()
+        headers = {
+            'X-ApiKeys': f'accessKey={access_key}; secretKey={secret_key};'}
+        expected_result = {"key": "9550264f6eb759da9ea5d6e6ebb8db022ea386331fce0331e8b547e59d3a0886"}
+        with requests_mock.Mocker() as m:
+            m.get('https://localhost:8834/scanners',
+                  text=json.dumps(expected_result),
+                  headers=headers)
+            self.assertEqual(
+                self.wrapper.list_scanners().get(
+                    headers=headers, verify=False)().data,
+                expected_result
+            )
+
+
 if __name__ == '__main__':
     unittest.main()
