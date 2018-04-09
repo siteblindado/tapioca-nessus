@@ -431,7 +431,7 @@ RESOURCE_MAPPING = {
         'docs': 'https://cloud.tenable.com/api#/resources/scanners/get-scans',
         'methods': ['GET']
     },
-    'get_scanners': {
+    'list_scanners': {
         'resource': '/scanners',
         'docs': 'https://cloud.tenable.com/api#/resources/scanners/list',
         'methods': ['GET']
