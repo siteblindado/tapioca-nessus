@@ -1,4 +1,5 @@
 # coding: utf-8
+import json
 
 from requests.auth import HTTPBasicAuth
 from tapioca import (
@@ -35,5 +36,18 @@ class NessusClientAdapter(JSONAdapterMixin, TapiocaAdapter):
                                          response_data, response):
         pass
 
+    def response_to_native(self, response):
+        if response.headers._store['content-type'][1] == 'application/octet-stream':
+            return response
+
+        elif response.content.strip():
+            return response.json()
+
+    def format_data_to_request(self, data):
+        if data:
+            try:
+                return json.dumps(data)
+            except:
+                return data
 
 Nessus = generate_wrapper_from_adapter(NessusClientAdapter)
