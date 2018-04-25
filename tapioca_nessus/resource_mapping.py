@@ -478,7 +478,7 @@ RESOURCE_MAPPING = {
         'docs': 'https://cloud.tenable.com/api#/resources/scans/details',
         'methods': ['GET']
     },
-    'export_downloand_scan': {
+    'export_download_scan': {
         'resource': '/scans/{scan_id}/export/{file_id}/download',
         'docs': 'https://cloud.tenable.com/api#/resources/scans/export-download',
         'methods': ['GET']
